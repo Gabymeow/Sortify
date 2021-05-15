@@ -1,6 +1,8 @@
 import os
-os.path.join()
-path = '~/fakeSD'
-for file in os.listdir("path"):
-    if file.endswith(".nef"):
-        print(os.path.join("path", file))
+home = os.path.expanduser("~")
+sdfolder = os.path.join(home, "fakeSD")
+print(sdfolder)
+
+for file in os.listdir(sdfolder):
+    if file.endswith(".NEF"):
+        print(os.path.join("sdfolder", file))
